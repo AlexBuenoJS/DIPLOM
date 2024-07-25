@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Personal page</title>
+    <style>
+        *, *:before, *:after {
+            -moz-box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #d1d6d1;
+        }
+
+        form {
+            max-width: 300px;
+            margin: 86.8px auto;
+            padding: 10px 20px;
+            background: #f4f7f8;
+            border-radius: 8px;
+        }
+
+        h1 {
+            margin: 0 0 30px 0;
+            text-align: center;
+        }
+
+        input[type="text"],
+        input[type="password"],
+        input[type="date"],
+        input[type="datetime"],
+        input[type="email"],
+        input[type="number"],
+        input[type="search"],
+        input[type="tel"],
+        input[type="time"],
+        input[type="url"],
+        textarea,
+        select {
+            background: rgba(255,255,255,0.1);
+            border: none;
+            font-size: 16px;
+            height: auto;
+            margin: 0;
+            outline: 0;
+            padding: 15px;
+            width: 100%;
+            background-color: #e8eeef;
+            color: #8a97a0;
+            box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+            margin-bottom: 30px;
+        }
+
+        input[type="radio"],
+        input[type="checkbox"] {
+            margin: 0 4px 8px 0;
+        }
+
+        select {
+            padding: 6px;
+            height: 32px;
+            border-radius: 2px;
+        }
+
+        button {
+            padding: 19px 39px 18px 39px;
+            color: #FFF;
+            background-color: #4CAF50;
+            font-size: 18px;
+            text-align: center;
+            font-style: normal;
+            border-radius: 5px;
+            width: 100%;
+            border: 1px solid #4CAF50;
+            border-width: 1px 1px 3px;
+            box-shadow: 0 -1px 0 #4CAF50;
+            margin-bottom: 10px;
+        }
+
+        fieldset {
+            margin-bottom: 30px;
+            border: none;
+        }
+
+        legend {
+            font-size: 1.4em;
+            margin-bottom: 10px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        label.light {
+            font-weight: 300;
+            display: inline;
+        }
+
+        .number {
+            background-color: #4CAF50;
+            color: #fff;
+            height: 30px;
+            width: 30px;
+            display: inline-block;
+            font-size: 0.8em;
+            margin-right: 4px;
+            line-height: 30px;
+            text-align: center;
+            text-shadow: 0 1px 0 rgba(255,255,255,0.2);
+            border-radius: 100%;
+        }
+
+        @media screen and (min-width: 480px) {
+
+            form {
+                max-width: 480px;
+            }
+
+        }
+
+        .back-button {
+            background-color: #4CAF50;
+            color: #fff;
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            z-index: 1;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 1rem;
+            text-align: center;
+            clear: both;
+
+        }
+        header {
+            background-color: #4CAF50;
+            color: #fff;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        nav li {
+            margin-right: 20px;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+    </style>
+</head>
+<link rel="stylesheet" href="https://codepen.io/gymratpacks/pen/VKzBEp#0">
+<link href='https://fonts.googleapis.com/css?family=Nunito:400,300' rel='stylesheet' type='text/css'>
+<body>
+<header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Авторизоваться</a></li>
+            <li><a href="index_1.html">Каталог жилья</a></li>
+            <li><a href="Lease.html">Заброннированное</a></li>
+            <li><a href="HomeForm.html">Анкета</a></li>
+            <li><a href="personal_page.html">Профиль</a></li>
+
+        </ul>
+    </nav>
+</header>
+<div class="row">
+    <div class="col-md-12">
+        <form action="index.html" method="post">
+            <h1> Твой профиль </h1>
+
+            <fieldset>
+
+                <legend><span class="number">1</span> Информация </legend>
+
+                <label for="name">Имя:</label>
+                <input type="text" id="name" name="user_name">
+
+                <label for="email">Email:</label>
+                <input type="email" id="mail" name="user_email">
+
+                <label>Возраст:</label>
+                <input type="radio" id="under_18" value="under_18" name="user_age"><label for="under_18" class="light">Under 18</label><br>
+                <input type="radio" id="over_18" value="over_18" name="user_age"><label for="over_18" class="light">Over 18</label>
+
+            </fieldset>
+                <legend><span class="number">2</span> Дополнительная информация</legend>
+
+                <label for="bio">О себе:</label>
+                <textarea id="bio" name="user_bio"></textarea>
+            <button type="submit">Сохранить</button>
+
+        </form>
+    </div>
+</div>
+<footer>
+    <h>AlexBuenoJS</h>
+</footer>
+</body>
+</html>

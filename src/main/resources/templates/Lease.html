@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Booked Property</title>
+    <style>
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: space-between;
+            color: white;
+        }
+
+        nav li {
+            margin-right: 20px;
+            color: white;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #d1d6d1;
+        }
+
+        .container {
+            width: 80%;
+            margin: 120px auto;
+            background-color: #fff;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .booked-property {
+            background-color: #c6efce; /* light green */
+            padding: 10px;
+            border: 1px solid #8bc34a; /* light green */
+            border-radius: 5px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .booked-property h2 {
+            color: #4CAF50; /* dark green */
+            margin-top: 0;
+        }
+
+        .booked-property p {
+            color: #666;
+            margin-bottom: 10px;
+        }
+
+        header {
+            background-color: #4CAF50;
+            color: #fff;
+            padding: 1rem;
+            text-align: center;
+
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 1rem;
+            text-align: center;
+            clear: both;
+            margin-top: 167px;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Авторизоваться</a></li>
+            <li><a href="index_1.html">Каталог жилья</a></li>
+            <li><a href="Lease.html">Заброннированное</a></li>
+            <li><a href="HomeForm.html">Анкета</a></li>
+            <li><a href="personal_page.html">Профиль</a></li>
+        </ul>
+    </nav>
+</header>
+<div class="container">
+    <h1>Забронированная недвижимость</h1>
+    <a href="index_6.html"><img src="home.jpg" alt="Дом" width="550"></a>
+    <div class="booked-property">
+      <h2>Название объекта: <span style="color: #4CAF50;"> Роскошные апартаменты</span></h2>
+        <p>Вы забронировали этот отель с <span style="background-color: #c6efce;">1 </span> по <span style="background-color: #c6efce;">15 марта 2023 года</span>.</p>
+    </div>
+</div>
+<footer>
+    <h>AlexBuenoJS</h>
+</footer>
+</body>
+</html>

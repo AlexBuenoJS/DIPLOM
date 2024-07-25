@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Booking</title>
+</head>
+<body>
+      <h1>RUS</h1>
+      <h2>Зарегистрировать свой обьект</h2>
+      <h3>Зарегистрироваться</h3>
+      <h4>Войти в аккаунт</h4>
+
+      <p>Жильё</p>
+
+      <p>Дом</p>
+
+      <p>Квартиру</p>
+
+      <div class="Gallery">
+          <img src="/images/03-02-9817246_4.jpg" alt="">
+          <img src="/images/026ad214d54537d6914780c18877cd65.jpeg" alt="">
+          <img src="/images/1581543220_49-p-dizain-fasadov-zagorodnikh-domov-79.jpg" alt="">
+          <img src="/images/1659503450_3-mykaleidoscope-ru-p-krasivie-zagorodnie-doma-i-kottedzhi-dizai-3.jpg " alt="">
+          <img src="/images/b61a47747cebd3820300030174783917.jpeg" alt="">
+      </div>
+
+
+      <form action="">
+          <!--  General -->
+          <div class="form-group">
+              <h2 class="heading">Booking & contact</h2>
+              <div class="controls">
+                  <input type="text" id="name" class="floatLabel" name="name">
+                  <label for="name">Name</label>
+              </div>
+              <div class="controls">
+                  <input type="text" id="email" class="floatLabel" name="email">
+                  <label for="email">Email</label>
+              </div>
+              <div class="controls">
+                  <input type="tel" id="phone" class="floatLabel" name="phone">
+                  <label for="phone">Phone</label>
+              </div>
+              <div class="grid">
+                  <div class="col-2-3">
+                      <div class="controls">
+                          <input type="text" id="street" class="floatLabel" name="street">
+                          <label for="street">Street</label>
+                      </div>
+                  </div>
+                  <div class="col-1-3">
+                      <div class="controls">
+                          <input type="number" id="street-number" class="floatLabel" name="street-number">
+                          <label for="street-number">Number</label>
+                      </div>
+                  </div>
+              </div>
+              <div class="grid">
+                  <div class="col-2-3">
+                      <div class="controls">
+                          <input type="text" id="city" class="floatLabel" name="city">
+                          <label for="city">City</label>
+                      </div>
+                  </div>
+                  <div class="col-1-3">
+                      <div class="controls">
+                          <input type="text" id="post-code" class="floatLabel" name="post-code">
+                          <label for="post-code">Post Code</label>
+                      </div>
+                  </div>
+              </div>
+              <div class="controls">
+                  <input type="text" id="country" class="floatLabel" name="country">
+                  <label for="country">Country</label>
+              </div>
+          </div>
+          <!--  Details -->
+          <div class="form-group">
+              <h2 class="heading">Details</h2>
+              <div class="grid">
+                  <div class="col-1-4 col-1-4-sm">
+                      <div class="controls">
+                          <input type="date" id="arrive" class="floatLabel" name="arrive" value="<?php echo date('Y-m-d'); ?>">
+                          <label for="arrive" class="label-date"><i class="fa fa-calendar"></i>&nbsp;&nbsp;Arrive</label>
+                      </div>
+                  </div>
+                  <div class="col-1-4 col-1-4-sm">
+                      <div class="controls">
+                          <input type="date" id="depart" class="floatLabel" name="depart" value="<?php echo date('Y-m-d'); ?>" />
+                          <label for="depart" class="label-date"><i class="fa fa-calendar"></i>&nbsp;&nbsp;Depart</label>
+                      </div>
+                  </div>
+              </div>
+              <div class="grid">
+                  <div class="col-1-3 col-1-3-sm">
+                      <div class="controls">
+                          <i class="fa fa-sort"></i>
+                          <select class="floatLabel">
+                              <option value="blank"></option>
+                              <option value="1">1</option>
+                              <option value="2" selected>2</option>
+                              <option value="3">3</option>
+                          </select>
+                          <label for="fruit"><i class="fa fa-male"></i>&nbsp;&nbsp;People</label>
+                      </div>
+                  </div>
+                  <div class="col-1-3 col-1-3-sm">
+                      <div class="controls">
+                          <i class="fa fa-sort"></i>
+                          <select class="floatLabel">
+                              <option value="blank"></option>
+                              <option value="deluxe" selected>With Bathroom</option>
+                              <option value="Zuri-zimmer">Without Bathroom</option>
+                          </select>
+                          <label for="fruit">Room</label>
+                      </div>
+                  </div>
+
+                  <div class="col-1-3 col-1-3-sm">
+                      <div class="controls">
+                          <i class="fa fa-sort"></i>
+                          <select class="floatLabel">
+                              <option value="blank"></option>
+                              <option value="single-bed">Zweibett</option>
+                              <option value="double-bed" selected>Doppelbett</option>
+                          </select>
+                          <label for="fruit">Bedding</label>
+                      </div>
+                  </div>
+
+              </div>
+              <div class="grid">
+                  <p class="info-text">Please describe your needs e.g. Extra beds, children's cots</p>
+                  <br>
+                  <div class="controls">
+                      <textarea name="comments" class="floatLabel" id="comments"></textarea>
+                      <label for="comments">Comments</label>
+                  </div>
+                  <button type="submit" value="Submit" class="col-1-4">Submit</button>
+              </div>
+          </div> <!-- /.form-group -->
+      </form>
+<!--      <link href="https://fonts.googleapis.com/css?family=Baloo|Ubuntu" rel="stylesheet">-->
+
+<!--      <div id="calender-wrapper">-->
+<!--          <div id="calender-title" class="disable-select flex row center-v around">-->
+<!--              <div id="left" class="flex row center-vh"><span><</span></div>-->
+<!--              <p class="flex row center-vh"></p>-->
+<!--              <div id="right" class="flex row center-vh"><span>></span></div>-->
+<!--          </div>-->
+<!--          <div id="days" class="flex row center-vh colorRed disable-select">-->
+<!--              <p>MON</p>-->
+<!--              <p>TUE</p>-->
+<!--              <p>WEDS</p>-->
+<!--              <p>THURS</p>-->
+<!--              <p>FRI</p>-->
+<!--              <p>SAT</p>-->
+<!--              <p>SUN</p>-->
+<!--          </div>-->
+<!--          <div id="calender-content" class="flex row wrap disable-select">-->
+<!--          </div>-->
+<!--          <div id="booking-wrapper" class="flex column center-vh">-->
+<!--              <div id="booking-title" class="flex row center-vh bgColorRed">-->
+<!--                  <p class="flex row center-vh">DETAILS OF YOUR ENQUIRY</p>-->
+<!--              </div>-->
+<!--              <div id="booking-form" class="flex column center-v">-->
+<!--                  <div class="flex column start width-full">-->
+<!--                      <p>Your Name*</p>-->
+<!--                      <input id="form-name" class="width-full" type="text" placeholder=""/>-->
+<!--                  </div>-->
+<!--                  <div class="flex column start width-full">-->
+<!--                      <p>Your Email*</p>-->
+<!--                      <input id="form-email" class="width-full" type="email" placeholder=""/>-->
+<!--                  </div>-->
+<!--                  <div class="flex row center-vh width-full overflow-hidden">-->
+<!--                      <div class="flex column start width-3-4">-->
+<!--                          <p>Your Number*</p>-->
+<!--                          <input id="form-number" class="width-full" type="text" placeholder=""/>-->
+<!--                      </div>-->
+<!--                      <div class="flex column start width-1-4">-->
+<!--                          <p>Number of Guests*</p>-->
+<!--                          <input id="form-guests" class="width-full" type="number" max="10" placeholder=""/>-->
+<!--                      </div>-->
+<!--                  </div>-->
+<!--                  <div class="flex column start width-full">-->
+<!--                      <p>Enquiry Information</p>-->
+<!--                      <textarea id="form-enquiry" type="text"></textarea>-->
+<!--                  </div>-->
+<!--                  <div class="flex column center-vh width-full">-->
+<!--                      <p><i>*Required field</i></p>-->
+<!--                  </div>-->
+<!--              </div>-->
+<!--          </div>-->
+<!--          <div id="calender-panel" class="flex row center-v end">-->
+<!--              <div id="info" class="flex column center-vh bgColorDarkRed">-->
+<!--                  <div id="info-titles" class="flex row center-vh">-->
+<!--                      <p class="flex column center-vh">Start Date</p>-->
+<!--                      <p class="flex column center-vh">End Date</p>-->
+<!--                  </div>-->
+<!--                  <div class="flex row center-vh bgColorRed">-->
+<!--                      <p class="flex column center-vh" id="startdate"></p>-->
+<!--                      <p class="flex column center-vh" id="enddate"></p>-->
+<!--                  </div>-->
+<!--              </div>-->
+<!--              <div id="clear" class="flex column center-vh bgColorDarkRed">-->
+<!--                  <p>CLEAR SELECTION</p>-->
+<!--              </div>-->
+<!--          </div>-->
+<!--      </div>-->
+
+<!--      <div id="calender-buttons" class="flex row center-vh wrap">-->
+<!--          <div id="make-booking" class="flex column center-vh">-->
+<!--              <p>MAKE BOOKING ENQUIRY</p>-->
+<!--          </div>-->
+<!--      </div>-->
+
+      <a href="/users/registraion user">
+          <button type="submit">Создать пользователя</button>
+      </a>
+      <a href="/users/ application rent">
+          <button type="submit">Создать аренду</button>
+      </a>
+</body>
+</html>

@@ -1,0 +1,145 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Регистрация пользователя</title>
+    <link rel="stylesheet" href="styles.css"> <!-- добавляем ссылку на CSS-код -->
+</head>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #d1d6d1;
+    }
+
+    .container {
+        max-width: 800px;
+        margin: 40px auto;
+        padding: 20px;
+        background-color: #f9f9f9;
+        border: 1px solid #ddd;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .addUser {
+        margin-top: 20px;
+    }
+
+    h2 {
+        margin-top: 0;
+    }
+
+    .form-group {
+        margin-bottom: 20px;
+    }
+
+    .form-control {
+        display: block;
+        width: 100%;
+        height: 40px;
+        margin-bottom: 10px;
+        padding: 10px;
+        border: 1px solid #ccc;
+    }
+
+    .btn {
+        background-color: #4CAF50;
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    .btn:hover {
+        background-color: #3e8e41;
+    }
+
+    .form-group label {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    .form-group legend {
+        font-size: 18px;
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+
+    .back-button {
+        background-color: #4CAF50;
+        color: #fff;
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        z-index: 1;
+        text-decoration: none;
+    }
+    .next
+    {
+        background-color: #4CAF50;
+        color: #fff;
+        position: absolute;
+        top: 60px;
+        left: 10px;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        z-index: 1;
+        text-decoration: none;
+    }
+</style>
+<body>
+<a class="back-button" href="index.html">Вернуться на предыдущую страницу</a>
+<a class="next" href="index_1.html">Пропустить авторизацию</a>
+<div class="container">
+    <div class="addUser">
+        <h2>Регистрация пользователя</h2>
+        <form method="POST" action="/users">
+            <div class="form-group">
+                <label for="name">Имя</label>
+                <input type="text" name="name" id="name" class="form-control" required>
+            </div>
+            <div class="form-group">
+                <label for="surname">Фамилия</label>
+                <input type="text" name="surname" id="surname" class="form-control" required>
+            </div>
+            <div class="form-group">
+                <label for="patronymic">Отчество</label>
+                <input type="text" name="patronymic" id="patronymic" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="city">Город</label>
+                <input type="text" name="city" id="city" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="country">Страна</label>
+                <input type="text" name="country" id="country" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="nick">Ник</label>
+                <input type="text" name="nick" id="nick" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="password">Пароль</label>
+                <input type="password" name="password" id="password" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="userdate">Дата рождения</label>
+                <input type="date" name="userdate" id="userdate" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" class="form-control">
+            </div>
+            <button type="submit" class="btn btn-primary">Зарегистрироваться</button>
+        </form>
+    </div>
+</div>
+</body>
+</html>

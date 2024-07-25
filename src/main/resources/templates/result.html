@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <title>HomeStay</title>
+    <link rel="stylesheet" href="styles.css">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #d1d6d1;
+        }
+
+        header {
+            background-color: #4CAF50;
+            color: #fff;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        nav li {
+            margin-right: 20px;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        main {
+            display: flex;
+            flex-direction: column;
+            align-items: center ;
+            padding: 2rem;
+
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 1rem;
+            text-align: center;
+            clear: both;
+        }
+
+        div {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            padding: 1rem;
+        }
+
+        div2 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 2rem;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 1rem;
+            text-align: center;
+            clear: both;
+        }
+    </style>
+<body>
+<header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Авторизоваться</a></li>
+            <li><a href="index_1.html">Каталог жилья</a></li>
+            <li><a href="Lease.html">Заброннированное</a></li>
+            <li><a href="HomeForm.html">Анкета</a></li>
+            <li><a href="personal_page.html">Профиль</a></li>
+        </ul>
+    </nav>
+</header>
+<main>
+    <div2>
+        <section id="catalog">
+            <h1>Каталог жилья</h1>
+            <form id="filter-form">
+                <label for="location">Местоположение:</label>
+                <input type="text" id="location" name="location"><br><br>
+                <label for="type">Тип жилья:</label>
+                <select id="type" name="type">
+                    <option value="апартаменты">Апартаменты</option>
+                    <option value="квартира">Квартира</option>
+                    <option value="дом">Дом</option>
+                </select><br><br>
+
+                <input type="submit" value="Применить фильтр">
+            </form>
+        </section>
+    </div2>
+    <div>
+        <a href="index_6.html"><img src="home.jpg" alt="Дом" width="150"></a>
+        <a href="index_6.html"><img src="house.jpg" alt="Дом" width="150"></a>
+        <a href="index_6.html"><img src="home.jpg" alt="Дом" width="150"></a>
+        <a href="index_6.html"><img src="house.jpg" alt="Дом" width="150"></a>
+        <a href="index_6.html"><img src="home.jpg" alt="Дом" width="150"></a>
+        <a href="index_6.html"><img src="house.jpg" alt="Дом" width="150"></a>
+        <a href="index_6.html"><img src="home.jpg" alt="Дом" width="150"></a>
+        <a href="index_6.html"><img src="house.jpg" alt="Дом" width="150"></a>
+        <a href="index_6.html"><img src="home.jpg" alt="Дом" width="150"></a>
+        <a href="index_6.html"><img src="house.jpg" alt="Дом" width="150"></a>
+        <a href="index_6.html"><img src="home.jpg" alt="Дом" width="150"></a>
+        <a href="index_6.html"><img src="house.jpg" alt="Дом" width="150"></a>
+        <a href="index_6.html"><img src="home.jpg" alt="Дом" width="150"></a>
+    </div>
+</main>
+<footer>
+    <h>AlexBuenoJS</h>
+</footer>
+<script src="script.js"></script>
+<footer>
+    <h>AlexBuenoJS</h>
+</footer>
+</body>
+</html>

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <title>HomeStay</title>
+    <link rel="stylesheet" href="styles.css">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #d1d6d1;
+        }
+
+        header {
+            background-color: #4CAF50;
+            color: #fff;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        nav li {
+            margin-right: 20px;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 1rem;
+            text-align: center;
+            clear: both;
+        }
+
+        div {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            padding: 1rem;
+        }
+
+        div2 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 2rem;
+        }
+        .container {
+            width: 80%;
+            margin: 150px auto;
+            background-color: #F0F0F0;
+            padding: 35px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+        .form-control {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .file-input {
+            margin-bottom: 20px;
+        }
+        .file-input label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+        .file-input input[type="file"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Авторизоваться</a></li>
+                <li><a href="index_1.html">Каталог жилья</a></li>
+                <li><a href="Lease.html">Заброннированное</a></li>
+                <li><a href="HomeForm.html">Анкета</a></li>
+                <li><a href="personal_page.html">Профиль</a></li>
+
+
+            </ul>
+        </nav>
+    </header>
+        <div class="container">
+            <h2>Форма для выставления недвижимости</h2>
+            <form>
+                <div class="form-group">
+                    <label for="name">Название:</label>
+                    <input type="text" id="name" name="name" class="form-control" placeholder="Введите название недвижимости">
+                </div>
+                <div class="form-group">
+                    <label for="price">Цена:</label>
+                    <input type="number" id="price" name="price" class="form-control" placeholder="Введите цену">
+                </div>
+                <div class="form-group">
+                    <label for="location">Местоположение:</label>
+                    <div>
+                        <label for="country">Страна:</label>
+                        <input type="text" id="country" name="country" class="form-control" placeholder="Введите название страны">
+                    </div>
+                    <div>
+                        <label for="city">Город:</label>
+                        <input type="text" id="city" name="city" class="form-control" placeholder="Введите название города">
+                    </div>
+                    <div>
+                        <label for="street">Улица:</label>
+                        <input type="text" id="street" name="street" class="form-control" placeholder="Введите название улицы">
+                    </div>
+                    <div>
+                        <label for="house">Дом:</label>
+                        <input type="text" id="house" name="house" class="form-control" placeholder="Введите номер дома">
+                    </div>
+                </div>
+                <div class="form-group file-input">
+                    <label for="photo">Фотография:</label>
+                    <input type="file" id="photo" name="photo" class="form-control">
+                </div>
+                <button type="submit" class="btn btn-success">Отправить</button>
+            </form>
+        </div>
+    <footer>
+        <h>AlexBuenoJS</h>
+    </footer>
+</body>
+</html>
+

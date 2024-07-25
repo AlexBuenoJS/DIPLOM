@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <title>HomeStay</title>
+    <link rel="stylesheet" href="styles.css">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #d1d6d1;
+        }
+
+        header {
+            background-color: #4CAF50;
+            color: #fff;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        nav li {
+            margin-right: 20px;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 2rem;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 1rem;
+            text-align: center;
+            clear: both;
+        }
+
+    </style>
+<body>
+<header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Авторизоваться</a></li>
+            <li><a href="index_1.html">Каталог жилья</a></li>
+            <li><a href="Lease.html">Заброннированное</a></li>
+            <li><a href="HomeForm.html">Анкета</a></li>
+            <li><a href="personal_page.html">Профиль</a></li>
+        </ul>
+    </nav>
+</header>
+<main>
+    <section id="booking-history">
+        <h1>История бронирования/аренды</h1>
+        <ul id="booking-history-list">
+            <!-- здесь будет список бронирований/аренды -->
+        </ul>
+    </section>
+    <section id="settings">
+        <h1>Настройки сайта</h1>
+        <form id="settings-form">
+            <label for="site-name">Название сайта:</label>
+            <input type="text" id="site-name" name="site-name"><br><br>
+            <label for="site-description">Описание сайта:</label>
+            <textarea id="site-description" name="site-description"></textarea><br><br>
+            <input type="submit" value="Сохранить настройки">
+        </form>
+    </section>
+</main>
+<footer>
+    <h>AlexBuenoJS</h>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>

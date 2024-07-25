@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <title>HomeStay</title>
+    <link rel="stylesheet" href="styles.css">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #d1d6d1;
+        }
+
+        header {
+            background-color: #4CAF50;
+            color: #fff;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        nav li {
+            margin-right: 20px;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 2rem;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 1rem;
+            text-align: center;
+            clear: both;
+        }
+
+        div {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            padding: 1rem;
+        }
+
+        div2 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 1rem;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 1rem;
+            text-align: center;
+            clear: both;
+        }
+
+    </style>
+<body>
+<header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Авторизоваться</a></li>
+            <li><a href="index_1.html">Каталог жилья</a></li>
+            <li><a href="Lease.html">Заброннированное</a></li>
+            <li><a href="HomeForm.html">Анкета</a></li>
+            <li><a href="personal_page.html">Профиль</a></li>
+        </ul>
+    </nav>
+</header>
+<main>
+    <section id="property">
+        <div2>
+            <h1>Описание жилья</h1>
+        </div2>
+        <img src="home.jpg" alt="Дом" width="1850" height="200">
+    </section>
+</main>
+<h2>Описание: лучший вариант,вообще самый лучший из тех,что ты видел за последнее время. За свои деньги это не дом,а нечто.
+    двадцать два санузла 15 спален и личное джакузи прямо на крыше за жалки 1млн доллоров. выбирайте у нас и все у вас в жизни будет супер</h2>
+<p id="property-description"></p>
+<h2>Цена: 1.000.000 баксов</h2>
+<p id="property-price"></p>
+<h2>Отзывы:</h2>
+<ul id="reviews-list">
+    <li><h>Просто Крутотень</h></li>
+    <li><h>хорошо отдохнули</h></li>
+    <li><h>джакузи на крыше супер!</h></li>
+</ul>
+<form id="review-form">
+    <label for="review-text">Отзыв:</label>
+    <textarea id="review-text" name="review"></textarea><br><br>
+    <input type="submit" value="Отправить отзыв">
+</form>
+<footer>
+    <h>AlexBuenoJS</h>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
